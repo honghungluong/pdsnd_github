@@ -16,7 +16,6 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     print('Hello! Let\'s input for city (chicago, new york city, washington)!')
@@ -199,7 +198,7 @@ def trip_duration_stats(df):
             print('\nThis city does not have End Time data')
         df['Travel_time'] = df['End Time'] - df['Start Time']
         totalTime = df["Travel_time"].sum()
-        # convert time to minutes
+        # convert to minutes
         avgTime = int(totalTime/count/1e9/60)
         
     # TO DO: display total travel time
@@ -261,7 +260,7 @@ def display_data(df):
                 elif(view_display == 'no'):
                     break
                 else:
-                    view_display = input("You input wrong data! Do you wish to continue? Enter yes or no? ").lower()
+                    view_display = input("You inputed wrong data! Do you wish to continue? Enter yes or no? ").lower()
         elif(view_data == 'no'):
             flag = False
         else:
