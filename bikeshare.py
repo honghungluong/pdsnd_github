@@ -198,6 +198,7 @@ def trip_duration_stats(df):
             print('\nThis city does not have End Time data')
         df['Travel_time'] = df['End Time'] - df['Start Time']
         totalTime = df["Travel_time"].sum()
+        # convert to minutes
         avgTime = int(totalTime/count/1e9/60)
         
     # TO DO: display total travel time
