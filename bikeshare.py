@@ -259,7 +259,7 @@ def display_data(df):
                 elif(view_display == 'no'):
                     break
                 else:
-                    view_display = input("You input wrong data! Do you wish to continue? Enter yes or no? ").lower()
+                    view_display = input("You inputed wrong data! Do you wish to continue? Enter yes or no? ").lower()
         elif(view_data == 'no'):
             flag = False
         else:
